@@ -4,10 +4,14 @@ function sidenVises() {
   console.log("sidenVises");
   const localTheme = localStorage.getItem("theme");
   bodyElement.dataset.theme = localTheme || "light";
+  darkSwitch.style.display = "block";
+  lightSwitch.style.display = "none";
 }
 
 let bodyElement = document.querySelector("body");
 const selectTheme = document.querySelector(".color_switch");
+let darkSwitch = document.querySelector(".color_dark");
+let lightSwitch = document.querySelector(".color_light");
 selectTheme.addEventListener("click", themeSwitch);
 
 function themeSwitch() {
@@ -15,10 +19,13 @@ function themeSwitch() {
   const currentTheme = bodyElement.dataset.theme;
   if (currentTheme === "light") {
     bodyElement.dataset.theme = "dark";
-
+    darkSwitch.style.display = "none";
+    lightSwitch.style.display = "block";
     localStorage.setItem("theme", "dark");
   } else {
     bodyElement.dataset.theme = "light";
+    darkSwitch.style.display = "block";
+    lightSwitch.style.display = "none";
     localStorage.setItem("theme", "light");
   }
 }
