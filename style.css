@@ -28,7 +28,6 @@ body {
   --circleY: calc(100% * var(--y));
   background: radial-gradient(ellipse closest-corner at var(--circleX, 50%) var(--circleY, 50%), #ffbff3 15%, var(--main-bg-col) 85%);
 }
-
 body::before {
   --cursorX: calc(100vw * var(--x));
   --cursorY: calc(100vh * var(--y));
@@ -75,16 +74,24 @@ p {
   font-size: 20px;
   color: var(--font-col);
 }
-
-/* farver */
-
 body {
   background-color: var(--main-bg-col);
 }
-
+a {
+  cursor: pointer;
+}
+.head {
+  display: flex;
+  justify-content: space-between;
+  margin: 50px;
+}
+.color_switch {
+  cursor: pointer;
+}
+/* section 1 */
 .section1 {
   display: grid;
-  margin: 50px;
+  margin: 100px;
   grid-template-columns: 1fr 1fr;
 }
 .section1 p {
@@ -97,10 +104,7 @@ body {
   margin-bottom: 60px;
 }
 
-a {
-  cursor: pointer;
-}
-
+/* section 2 */
 .vertical {
   transform: rotate(-90deg);
 }
@@ -108,12 +112,6 @@ a {
   margin-top: 150px;
   margin-left: 350px;
   display: flex;
-}
-.section3 {
-  margin: 100px;
-}
-.section3 h3 {
-  color: var(--font-col);
 }
 div.image-container {
   background-color: transparent;
@@ -132,13 +130,23 @@ div.image-container img:hover {
   height: 360px;
   border-radius: 130px;
 }
-/* cards */
+/* section3
+.section3 {
+  margin: 150px;
+}
+.section3 h3 {
+  color: var(--font-col);
+  font-style: italic;
+} */
+
+/* cards/section4 */
 .section4 {
-  margin: 100px;
+  margin: 150px;
 }
 .section4 h3 {
   color: var(--font-col);
   margin-bottom: 30px;
+  font-style: italic;
 }
 .section4 h4 {
   margin-top: 10px;
@@ -190,7 +198,8 @@ footer {
   justify-content: space-evenly;
 }
 footer a {
-  font-family: "Roboto Serif", serif;
+  font-family: "Roboto", sans-serif;
+  font-style: italic;
   font-size: 20px;
   text-transform: uppercase;
   color: #b0c900;
@@ -199,4 +208,5 @@ footer a {
 footer a:hover {
   color: #5a3fff;
   text-decoration: underline;
+  font-size: 22px;
 }
