@@ -15,6 +15,7 @@ function themeSwitch() {
   const currentTheme = bodyElement.dataset.theme;
   if (currentTheme === "light") {
     bodyElement.dataset.theme = "dark";
+
     localStorage.setItem("theme", "dark");
   } else {
     bodyElement.dataset.theme = "light";

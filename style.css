@@ -44,25 +44,28 @@ body::before {
 }
 /* fonte */
 h2 {
-  font-family: "Roboto Serif", serif;
-  font-size: 80px;
-  text-transform: uppercase;
-  color: var(--font-col);
-}
-.seriffont {
   font-family: "Roboto", sans-serif;
   font-size: 80px;
   text-transform: uppercase;
   color: var(--font-col);
 }
+.italicfont {
+  font-family: "Roboto", sans-serif;
+  font-style: italic;
+  font-weight: 200;
+  font-size: 80px;
+  text-transform: uppercase;
+  color: var(--font-col);
+}
 h3 {
-  font-family: "Roboto Serif", serif;
+  font-family: "Roboto", sans-serif;
   font-size: 30px;
   text-transform: uppercase;
   color: var(--font-col);
 }
 h4 {
   font-family: "Roboto", sans-serif;
+  font-style: italic;
   font-size: 20px;
   text-transform: uppercase;
   color: var(--font-col);
@@ -76,12 +79,12 @@ p {
 /* farver */
 
 body {
-  margin: 50px;
   background-color: var(--main-bg-col);
 }
 
 .section1 {
   display: grid;
+  margin: 50px;
   grid-template-columns: 1fr 1fr;
 }
 .section1 p {
