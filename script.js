@@ -22,7 +22,7 @@ function themeSwitch() {
     darkSwitch.style.display = "none";
     lightSwitch.style.display = "block";
     localStorage.setItem("theme", "dark");
-  } else {
+  } else if (currentTheme === "dark") {
     bodyElement.dataset.theme = "light";
     darkSwitch.style.display = "block";
     lightSwitch.style.display = "none";
