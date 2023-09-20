@@ -318,6 +318,12 @@ footer a:hover {
     width: 275px;
     height: 180px;
   }
+  div.image-container img:hover {
+    padding: 10px;
+    width: 275px;
+    height: 180px;
+    border-radius: 0px;
+  }
   /* cards/section4 */
   .section4 {
     margin: 60px;
