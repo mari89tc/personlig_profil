@@ -1,5 +1,4 @@
-/* font-family: 'Roboto', sans-serif;
-font-family: 'Roboto Serif', serif; */
+/* font-family: 'Roboto', sans-serif; */
 
 * {
   padding: 0;
@@ -46,7 +45,7 @@ h2 {
 .italicfont {
   font-family: "Roboto", sans-serif;
   font-style: italic;
-  font-weight: 200;
+  font-weight: 300;
   font-size: 100px;
   text-transform: uppercase;
   color: var(--font-col);
