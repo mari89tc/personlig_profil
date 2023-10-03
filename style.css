@@ -104,22 +104,6 @@ a {
   margin-bottom: 60px;
   margin-left: 70px;
 }
-.scrollEffect {
-  -webkit-animation: slide-right 2s cubic-bezier(0.25, 0.46, 0.45, 0.94) 1s both;
-  animation: slide-right 2s cubic-bezier(0.25, 0.46, 0.45, 0.94) 1s both;
-}
-.scrollEffect2 {
-  -webkit-animation: slide-right 2s cubic-bezier(0.25, 0.46, 0.45, 0.94) 1.3s both;
-  animation: slide-right 2s cubic-bezier(0.25, 0.46, 0.45, 0.94) 1.3s both;
-}
-.scrollEffect3 {
-  -webkit-animation: slide-right 2s cubic-bezier(0.25, 0.46, 0.45, 0.94) 1.5s both;
-  animation: slide-right 2s cubic-bezier(0.25, 0.46, 0.45, 0.94) 1.5s both;
-}
-.scrollEffect4 {
-  -webkit-animation: slide-right 2s cubic-bezier(0.25, 0.46, 0.45, 0.94) 1.7s both;
-  animation: slide-right 2s cubic-bezier(0.25, 0.46, 0.45, 0.94) 1.7s both;
-}
 /* section 2 */
 .vertical {
   transform: rotate(-90deg);
@@ -281,22 +265,7 @@ footer a:hover {
     margin-bottom: 30px;
     margin-left: 70px;
   }
-  .scrollEffect {
-    -webkit-animation: slide-right 2s cubic-bezier(0.25, 0.46, 0.45, 0.94) 1s both;
-    animation: slide-right 2s cubic-bezier(0.25, 0.46, 0.45, 0.94) 1s both;
-  }
-  .scrollEffect2 {
-    -webkit-animation: slide-right 2s cubic-bezier(0.25, 0.46, 0.45, 0.94) 1.3s both;
-    animation: slide-right 2s cubic-bezier(0.25, 0.46, 0.45, 0.94) 1.3s both;
-  }
-  .scrollEffect3 {
-    -webkit-animation: slide-right 2s cubic-bezier(0.25, 0.46, 0.45, 0.94) 1.5s both;
-    animation: slide-right 2s cubic-bezier(0.25, 0.46, 0.45, 0.94) 1.5s both;
-  }
-  .scrollEffect4 {
-    -webkit-animation: slide-right 2s cubic-bezier(0.25, 0.46, 0.45, 0.94) 1.7s both;
-    animation: slide-right 2s cubic-bezier(0.25, 0.46, 0.45, 0.94) 1.7s both;
-  }
+
   /* section 2 */
   .vertical {
     transform: rotate(-90deg);

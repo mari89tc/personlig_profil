@@ -38,3 +38,26 @@ function updateCursor(e) {
   document.documentElement.style.setProperty("--y", y.toFixed(5));
 }
 document.body.addEventListener("pointermove", updateCursor);
+
+gsap.registerPlugin(ScrollTrigger);
+gsap.matchMedia().add("(prefers-reduced-motion: no-preference)", () => {
+  const sections = document.querySelectorAll("section");
+  sections.forEach((section) => {
+    const ps = section.querySelectorAll(".section1 p");
+    gsap
+      .timeline({
+        scrollTrigger: {
+          trigger: section,
+          start: "top 20%", // Animationen sættes igang, når toppen a section-elementet rammer 50% ind i viewporten
+          end: "+=300px", // Animationen er slut, når man har scrollet 200px ned
+          scrub: true, // Animationen bindes op på scrollbaren
+          markers: true,
+        },
+      })
+      .from(ps, {
+        opacity: 0,
+        y: 20,
+        stagger: 0.5,
+      });
+  });
+});
