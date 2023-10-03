@@ -50,7 +50,7 @@ gsap.matchMedia().add("(prefers-reduced-motion: no-preference)", () => {
           trigger: section,
           start: "top 20%", // Animationen sættes igang, når toppen a section-elementet rammer 50% ind i viewporten
           end: "+=300px", // Animationen er slut, når man har scrollet 200px ned
-          scrub: true, // Animationen bindes op på scrollbaren
+          scrub: 0.8, // Animationen bindes op på scrollbaren
         },
       })
       .from(ps, {
